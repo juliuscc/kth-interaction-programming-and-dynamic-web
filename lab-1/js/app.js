@@ -1,2 +1,3 @@
 const model = new DinnerModel();
-document.body.textContent = model.getNumberOfGuests();
+new SidebarController(model, document.body.querySelector("#sidebar"));
+new SummaryController(model, document.body.querySelector("#summary"));
